@@ -1,6 +1,11 @@
 #! python
 
-# __author__ = "Lucky-H"
+"""
+@author： "Lucky-H"
+@file: make_db_file.py.py
+@date: 2018-08-03
+@time: 00:11:15
+"""
 
 # 记录
 bob = {'name': 'Bob Smith', 'age': 43, 'pay': 30000, 'job': 'dev'}
