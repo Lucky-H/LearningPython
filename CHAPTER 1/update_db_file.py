@@ -8,3 +8,9 @@
 """
 
 
+from make_db_file import storedb, loaddb
+db = loaddb()
+db['sue']['pay'] *= 1.10
+db['tom']['name'] = 'tom tom'
+storedb(db)
+
