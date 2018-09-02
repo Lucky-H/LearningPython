@@ -51,6 +51,7 @@ class Fork(Launchmode):
     def run(self, cmdline):
         assert hasattr(os, 'fork')
         cmdline = fix_windows_path(cmdline)
+        cmdline = cmdline.split()
         if os.fork() == 0:
             os.execvp(pypath, [pyfile] + cmdline)
 
